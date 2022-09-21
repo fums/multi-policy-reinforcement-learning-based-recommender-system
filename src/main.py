@@ -244,7 +244,7 @@ def get_cluster_embeddings(embs,train_user_embs, k=10):
 
 
 
-def trainBatchPopUserHQlearning(utils, cfg):
+def train(utils, cfg):
 
 
     print (time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) )
@@ -574,7 +574,7 @@ if __name__ == "__main__":
     cfg = Config()
     utils = Utils()
 
-    amodel =  trainBatchPopUserHQlearning(utils, cfg)
+    amodel =  train(utils, cfg)
 
 
 
